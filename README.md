@@ -38,8 +38,6 @@ function parse_markdown(md) {
   
   // Hyperlinks
   md = md.replace(/[\[]{1}([^\]]+)[\]]{1}[\(]{1}([^\)\"]+)(\"(.+)\")?[\)]{1}/g, '<a href="$2" target="_blank" style="color: #0000EE;" onmouseover="this.style.textDecoration = \'underline\'" onmouseout="this.style.textDecoration = \'none\'">$1</a>');
-  var visited_link = document.querySelector("a:visited");
-  visited_link.style.color = "#0000EE";
   
   // Font styles
   md = md.replace(/[\*\_]{2}([^\*\_]+)[\*\_]{2}/g, '<b>$1</b>');
