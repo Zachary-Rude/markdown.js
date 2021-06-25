@@ -53,7 +53,7 @@ function parse_markdown(md) {
   md = md.replace(/^\`\`\`\s*\n/gm, '</code></pre>\n\n');
   
   // Inline code snippets
-  md = md.replace(/[\`]{1}([^\`]+)[\`]{1}/g, '<code style="padding: 0.2em 0.4em; margin: 0; font-size: 85%;background-color: #1b1f230d; border-color: #1b1f230d; border-radius: 3px; border-style: solid; border-width: 1px; color: #FF491C; font-family: Consolas, Courier, \'Courier New\', monospace; font-weight: normal;>$1</code>');
+  md = md.replace(/[\`]{1}([^\`]+)[\`]{1}/g, '<code style="padding: 0.2em 0.4em; margin: 0; font-size: 85%;background-color: #1b1f230d; border-color: #1b1f230d; border-radius: 3px; border-style: solid; border-width: 1px; color: #FF491C; font-family: Consolas, Courier, \'Courier New\', monospace; font-weight: normal;">$1</code>');
   
   // Paragraphs
   md = md.replace(/^\s*(\n)?(.+)/gm, function(m){
@@ -65,3 +65,15 @@ function parse_markdown(md) {
   return md;
 }
 ```
+
+## **Load from JSDelivr**
+
+To load the JavaScript file into a web page, you can use this code:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/Zachary-Rude/markdown.js/markdown.js"></script>
+```
+
+## **About Markdown.js**
+
+Copyright &copy; 2021, By Zachary Rude.
