@@ -1,8 +1,8 @@
-;/*! showdown v 1.9.1 - 02-11-2019 */
+/*
+ * Markdown.js
+ * Copyright (c) 2021, By Zachary Rude.
+*/
 (function(){
-/**
- * Created by Tivie on 13-07-2015.
- */
 
 function getDefaultOpts (simple) {
   'use strict';
