@@ -85,7 +85,7 @@ function getDefaultOpts (simple) {
       type: 'boolean'
     },
     tables: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Turn on/off tables support',
       type: 'boolean'
     },
@@ -145,7 +145,7 @@ function getDefaultOpts (simple) {
       type: 'boolean'
     },
     openLinksInNewWindow: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Open all links in new windows',
       type: 'boolean'
     },
@@ -155,7 +155,7 @@ function getDefaultOpts (simple) {
       type: 'boolean'
     },
     emoji: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Enable emoji support. Ex: `this is a :smile: emoji`',
       type: 'boolean'
     },
@@ -209,7 +209,7 @@ function allOptionsOn () {
  */
 
 // Private properties
-var showdown = {},
+var markdownjs = {},
     parsers = {},
     extensions = {},
     globalOptions = getDefaultOpts(true),
@@ -257,7 +257,8 @@ var showdown = {},
       },
       vanilla: getDefaultOpts(true),
       allOn: allOptionsOn()
-    };
+    },
+    showdown = markdownjs;
 
 /**
  * helper namespace
